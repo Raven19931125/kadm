@@ -7,6 +7,7 @@
 body{
     overflow-x: hidden;
     font-family: 'Comfortaa';
+    color: white;
 
 }
 li{
@@ -17,12 +18,11 @@ a{
     color: white;
 }
 .container{
-    max-width: 1760px;
+    width: 1440px;
     margin: 0 auto;
-    color: white;
 }
 .back{
-    background: #0E0C38 url("img/main.png") no-repeat -180px 0;
+    background: #0E0C38 url("img/main.png") no-repeat;
     background-size: contain;
 }
 .head{
@@ -106,8 +106,9 @@ a{
 }
 .group{
     background: url(img/group.png) no-repeat;
-    height: 709px;
-    width: 700px;
+    background-size: contain;
+    height: 650px;
+    width: 650px;
 }
 .main .container div:nth-child(3) ul{
     position: absolute;
@@ -138,13 +139,14 @@ a{
     content: '';
     position: absolute;
     top: 36px;
-    left: 550px;
-    width: 330px;
+    left: 440px;
+    width: 200px;
     height: 2px;
     background-color: #DD019F;
 }
 .main-2 .top ul li{
     margin-bottom: 35px;
+    font-size: 24px;
 }
 .main-2 .top button{
     padding: 34px 87px 34px 31px;
@@ -155,11 +157,10 @@ a{
     border: none;
 }
 .main-2 .container .slider{
-    background: url(img/group-2.png) no-repeat 0 250px,
-                url(img/group-2-phone.png) no-repeat 70px 250px;
-    background-size: contain,645px;
-    width: 769px;
-    height: 828px;
+    background: url(img/group-2.png) no-repeat -10px 350px;
+    background-size: contain;
+    width: 660px;
+    height: 829px;
 }
 .main-2 .bottom h2{
     font-size: 60px;
@@ -170,8 +171,8 @@ a{
     content: '';
     position: absolute;
     top: 36px;
-    left: 425px;
-    width: 330px;
+    left: 280px;
+    width: 200px;
     height: 2px;
     background-color: #DD019F;
 }
@@ -180,26 +181,25 @@ a{
     justify-content: space-between;
 }
 .main-2 .bottom ul li{
-
-    width: 562px;
+    width: 450px;
     height: 819px;
     text-align: center;
     padding-top: 65px;
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 28px;
     margin-top: 120px;
 }
+.main-2 .bottom ul li img{
+    margin: 55px 0 50px 0;
+}
 .main-2 .bottom ul li:first-child{
-    background: url("img/printer.png") no-repeat 155px 230px,url("img/path.png");
+    background: #0E0C38;
 }
 .main-2 .bottom ul li:nth-child(2){
-    background: url("img/cartrige.png") no-repeat 125px 230px,url("img/path.png");
+    background: #0E0C38;
 }
 .main-2 .bottom ul li:last-child{
-    background: url("img/printer-2.png") no-repeat 155px 230px,url("img/path.png");
-}
-.main-2 .bottom div{
-    margin-top: 360px;
+    background: #0E0C38;
 }
 .main-2 .bottom button:first-child{
     padding: 38px 132px 35px 80px;
@@ -234,10 +234,11 @@ a{
     content: '';
     position: absolute;
     top: 240px;
-    left: 710px;
-    width: 345px;
+    left: 50%;
+    width: 350px;
     height: 2px;
     background-color: #DD019F;
+    margin-left: -175px;
 }
 .main-3 h3{
     font-size: 38px;
@@ -249,91 +250,51 @@ a{
 .main-3 ul{
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
 }
 .main-3 ul:first-of-type{
-    margin-top: 195px;
+    margin-bottom: 170px;
 }
-.main-3 ul:first-of-type li{
-    font-size: 35px;
-    text-align: center;
-    max-width: 300px;
-    margin: 0 auto;
+.main-3 ul li p{
+    width: 300px;
+    margin: 55px auto;
+    font-size: 25px;
 }
 .main-3 ul li button{
-    padding: 38px 132px 35px 80px;
+    padding: 30px 80px 30px 40px;
     border-radius: 66px;
     font-size: 24px;
     background-color: #DD019F;
     color: white;
     border: none;
-    margin-top: 50px;
+    margin-top:45px;
 }
-.main-3 ul:first-of-type li div{
-    margin:0 auto 75px;
-}
-.main-3 ul:first-of-type li:first-child div{
-    background: url("img/paper.png") no-repeat;
-    width: 224px;
-    height: 162px;
-}
-.main-3 ul:first-of-type li:nth-child(2) div{
-    background: url("img/block.png")no-repeat;
-    width: 236px;
-    height: 133px;
-}
-.main-3 ul:first-of-type li:nth-child(3) div{
-    background: url("img/color.png")no-repeat;
-    width: 142px;
-    height: 159px;
-}
-.main-3 ul:nth-of-type(3){
-    margin-top: 170px;
-}
-.main-3 ul:nth-of-type(3) li:first-child div{
-    background: url("img/printer-3.png") no-repeat;
-    width: 223px;
-    height: 241px;
-}
-.main-3 ul:nth-of-type(3) li:nth-child(2) div{
-    background: url("img/xerox.png") no-repeat;
-    width: 163px;
-    height: 241px;
-}
-.main-3 ul:nth-of-type(3) li:nth-child(3) div{
-    background: url("img/paper-for.png")no-repeat;
-    height: 241px;
-    width: 295px;
-}
-.main-3 ul:nth-of-type(3) li div{
-    margin:0 auto 75px;
-}
-.main-3 ul:nth-of-type(3) li{
-    font-size: 35px;
-    text-align: center;
-    max-width: 300px;
-    margin: 0 auto;
-}
+
+
 /*.reviews*/
 
 .reviews{
     background-color: #040221;
 }
-.reviews h1{
+.reviews h2{
     font-size: 60px;
     text-align: center;
     padding-top: 135px;
     position: relative;
 }
-.reviews h1::after{
+.reviews h2::after{
     content: '';
     position: absolute;
     top: 260px;
-    left: 740px;
-    width: 260px;
+    left: 50%;
+    width: 280px;
     height: 2px;
+    margin-left: -140px;
     background-color: #DD019F;
 }
-.reviews h2{
+.reviews h3{
     font-size: 38px;
     max-width: 635px;
     text-align: center;
@@ -356,7 +317,7 @@ a{
     content: '';
     position: absolute;
     background: url("img/pause.png");
-    top: 220px;
+    top: 150px;
     left: 325px;
     width: 42px;
     height: 50px;
@@ -364,19 +325,19 @@ a{
 .reviews ul{
     display: flex;
     justify-content: space-between;
-    margin-top:295px;
+    margin-top:50px;
 }
 .reviews ul li:first-child{
-    background: url(img/map.png) no-repeat 10px 10px;
+    background: url(img/map.png) no-repeat 10px 160px;
     width: 810px;
-    height: 780px;
+    height: 680px;
     background-size:100%;
 
 }
 .reviews ul li:last-child{
     max-width: 880px;
     margin: 150px 0 0 80px;
-    font-size: 30px;
+    font-size: 25px;
 }
 .reviews ul li:last-child h3{
     font-size: 30px;
@@ -386,36 +347,27 @@ a{
 }
 .reviews ul li div{
     display: flex;
+    justify-content: space-between;
+    margin:50px 0;
 }
-.reviews ul li div button{
-    margin-top: 55px;
-}
-.reviews ul li div button:nth-child(1){
+.reviews ul li div:nth-child(1) button{
     padding: 38px 132px 35px 80px;
     border-radius: 66px;
     font-size: 24px;
     background-color: #DD019F;
     color: white;
     border: none;
-    margin-right: 237px;
 }
-.reviews ul li div button:nth-child(2){
+.reviews ul li div:nth-child(2) button{
     padding: 40px 45px;
     border-radius: 50%;
     font-size: 24px;
     color: white;
     border: 2px solid white;
     background-color: transparent;
+    margin-left: 30px;
 }
-.reviews ul li div button:nth-child(3){
-    padding: 40px 45px;
-    border-radius: 50%;
-    font-size: 24px;
-    color: white;
-    border: 2px solid white;
-    background-color: transparent;
-    margin-left: 31px;
-}
+
 
 /*.consultation*/
 
@@ -424,12 +376,12 @@ a{
     padding-top: 263px;
     background-color: #0E0C38;
 }
-.consultation h1{
+.consultation h2{
     font-size: 60px;
     text-align: center;
     position: relative;
 }
-.consultation h1::before{
+.consultation h2::before{
     content: '';
     position: absolute;
     top: -263px;
@@ -438,16 +390,17 @@ a{
     height: 190px;
     background-color: #DD019F;
 }
-.consultation h1::after{
+.consultation h2::after{
     content: '';
     position: absolute;
-    top: 160px;
-    left: 752px;
-    width: 255px;
+    top: 120%;
+    left: 50%;
+    width: 280px;
     height: 2px;
     background-color: #DD019F;
+    margin-left: -140px;
 }
-.consultation h2{
+.consultation h3{
     font-size: 38px;
     max-width: 1240px;
     text-align: center;
@@ -471,7 +424,6 @@ a{
     margin: -3px 25px;
 }
 .consultation .container div:nth-child(2) ul:nth-child(3) li textarea{
-    margin: 0px;
     width: 1238px;
     height: 205px;
     font-size: 40px;
