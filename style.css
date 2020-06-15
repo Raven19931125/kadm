@@ -25,9 +25,6 @@ a{
     background: #0E0C38 url("img/main.png") no-repeat;
     background-size: contain;
 }
-.head{
-    height:325px;
-}
 .logo{
     height: 150px;
     width: 180px;
@@ -68,12 +65,24 @@ a{
     color: white;
     margin-top: 55px;
 }
-.main{
-    /*background: #0E0C38;*/
+.main ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main ul li{
+    border-bottom: 2px solid #222043;
+    margin-bottom: 15px;
+    width: 30px;
+    text-align: center;
+    padding-bottom: 5px;
 }
 .main .container{
     display: flex;
     justify-content: space-between;
+}
+.main .container div:nth-child(2){
+    display: flex;
 }
 .main .container div:first-child h1{
     font-size: 80px;
@@ -127,7 +136,7 @@ a{
 .main-2 .container .top{
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
 }
 .main-2 .container .top h2{
     margin-top: 240px;
@@ -181,6 +190,7 @@ a{
     justify-content: space-between;
 }
 .main-2 .bottom ul li{
+    background: #0E0C38;
     width: 450px;
     height: 819px;
     text-align: center;
@@ -191,15 +201,6 @@ a{
 }
 .main-2 .bottom ul li img{
     margin: 55px 0 50px 0;
-}
-.main-2 .bottom ul li:first-child{
-    background: #0E0C38;
-}
-.main-2 .bottom ul li:nth-child(2){
-    background: #0E0C38;
-}
-.main-2 .bottom ul li:last-child{
-    background: #0E0C38;
 }
 .main-2 .bottom button:first-child{
     padding: 38px 132px 35px 80px;
@@ -375,6 +376,7 @@ a{
 .consultation{
     padding-top: 263px;
     background-color: #0E0C38;
+    padding-bottom: 135px;
 }
 .consultation h2{
     font-size: 60px;
@@ -436,9 +438,6 @@ a{
     background-color: #DD019F;
     color: white;
     border: none;
-}
-.consultation .container{
-    padding-bottom: 135px;
 }
 .footer{
     height: 530px;

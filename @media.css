@@ -3,9 +3,7 @@
         width: 1000px;
     }
     .logo{
-        background-size: 300px;
         margin-left: 20px;
-        width: auto;
     }
     .head .container{
         flex-direction: column;
@@ -18,51 +16,172 @@
         flex-direction: column;
         margin: 30px 0 50px 0;
     }
+    .head .container div ul{
+        margin: -50px auto 30px;
+    }
+    .main .container div:first-child h1{
+        font-size: 60px;
+    }
+    .main .group{
+        background-size: 450px;
+        width: 463px;
+        height: 460px;
+    }
+    .main h3{
+        font-size: 26px;
+        width: 450px;
+    }
+    .main ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .main ul li{
+        margin:0 30px 0;
+    }
     .main .container button{
         margin: 20px 0;
         padding-right: 30px;
     }
     /*.main*/
-    .main-2 .container .slider{
+    .main-2{
+        padding-bottom: 60px;
+    }
+    .main-2 .container .top h2{
         margin-top: 120px;
+        margin-bottom: 80px;
+        font-size: 50px;
+    }
+    .main-2 .container .top h2::after{
+        top: 24px;
+        left: 350px;
+    }
+    .main-2 .container .slider{
+        margin-top: -100px;
         background-size: 390px;
         width: 380px;
     }
-    .top ul{
-        width: 620px;
+    .top div{
+        margin: 0 auto;
+    }
+    .main-2 .bottom h2{
+        margin-top:0;
+        margin-bottom: -40px;
+        font-size: 50px;
+    }
+    .main-2 .bottom span{
+        display: block;
+        height: 300px;
     }
     .main-2 .bottom ul{
         flex-wrap: wrap;
     }
-    .main-2 .bottom ul li:last-child{
-        margin: 98px auto;
+    .main-2 .bottom ul li{
+        width: 280px;
+        height: 530px;
+        font-size: 20px;
+    }
+    .main-2 .bottom ul li img{
+        width: 50%;
+        height: auto;
+    }
+    .main-2 .bottom button:first-child{
+        padding: 10px 30px 10px 30px;
+    }
+    .main-2 .bottom button:last-child{
+        padding: 10px 15px 10px 15px;
     }
     /*.main-3*/
     .main-3{
-        padding-bottom: 130px;
+        padding-bottom: 50px;
     }
    .main-3 ul{
        justify-content: space-between;
    }
-
-    .main-3 ul li:nth-child(3){
-        margin: 100px auto 0;
+    .main-3 ul:first-of-type{
+        margin-bottom: 30px;
     }
-    .reviews ul li:last-child h3{
-        margin: 40px 0 0 0;
+    .main-3 ul li p{
+        margin: 15px auto -25px;
+        font-size: 20px;
+    }
+    .main-3 h2{
+        font-size: 50px;
+        padding-top: 70px;
+    }
+    .main-3 h2::after{
+        top: 170px;
+    }
+   .main-3 h3{
+       font-size: 22px;
+   }
+    .main-3 ul li img{
+        width: 50%;
+        height: auto;
+    }
+    .main-3 ul li button{
+        padding: 10px 20px 10px 20px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    /*.reviews*/
+    .reviews h2{
+        font-size: 50px;
+        padding-top: 55px;
+    }
+    .reviews h3{
+        font-size: 22px;
+        margin: 40px auto 0;
+    }
+    .reviews h2::after{
+        top: 130px;
     }
     .reviews ul li div{
         display: flex;
         justify-content: space-between;
-        margin: 10px -240px 50px;
+        margin: 0px 0px 0px;
         width: 100%;
     }
-    .reviews p::after{
-        top: 210px;
-        left: 160px;
+    .reviews ul li:first-child{
+        background: url(img/map.png) no-repeat 10px 0;
+        width: 810px;
+        height: 540px;
+        background-size: 100%;
     }
-    .reviews ul li div:nth-child(2) button:nth-child(2){
-        margin-right: 200px;
+    .reviews ul li:last-child{
+        margin: 20px 0 0 60px;
+    }
+    .reviews ul li:last-child h3{
+        margin: 50px 0 0 0;
+        font-size: 22px;
+    }
+    .reviews ul li div:nth-child(1) button{
+        padding: 0 25px;
+    }
+    .reviews ul li div:nth-child(2) button{
+        padding: 30px 35px;
+    }
+    .reviews p{
+        font-size: 20px;
+    }
+    .reviews p::before{
+        top: -60px;
+        left: 20px;
+    }
+    .reviews p::after{
+        top: 120px;
+        left: 120px;
+    }
+    .reviews ul li div button{
+        margin-top: 50px;
+    }
+    /*.consultation*/
+    .consultation h2{
+        font-size: 50px;
+    }
+    .consultation h3{
+        font-size: 25px;
+        margin: 45px auto 0;
     }
     .consultation .container div:nth-child(2) ul{
         flex-wrap: wrap;
@@ -71,14 +190,251 @@
     .consultation .container div:nth-child(2) ul:nth-child(1) li input,
     .consultation .container div:nth-child(2) ul:nth-child(2) li input{
         margin: 20px 0;
+        padding: 14px 25px 15px 18px;
+        font-size: 25px;
     }
     .consultation .container div:nth-child(2) ul:nth-child(3) li textarea{
-        width: 700px;
+        height: 80px;
+        width: 500px;
+        font-size: 25px;
+        padding: 25px 0 0 14px;
         margin: 20px 0;
+    }
+    /*.footer*/
+    .footer{
+        height: 400px;
+    }
+    .footer ul{
+        padding-top: 50px;
+    }
+    .footer ul li:nth-child(1)::before{
+        transform: rotate(90deg);
+        top: 65px;
+    }
+    .footer ul li:nth-child(2){
+        margin-top: 60px;
+    }
+    .footer ul li:nth-child(3){
+        margin-top: 90px;
     }
 }
 @media all and (max-width:1120px){
     .container{
         width: 600px;
     }
+    .logo{
+        background-size: 300px;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .head .container div ul{
+        flex-wrap: wrap;
+    }
+    .head .container div ul li:not(:last-child){
+        font-size: 16px;
+    }
+    .head .container div ul li:last-child{
+        margin-right: 180px;
+        font-size: 16px;
+    }
+    .main .container div:first-child h1{
+        margin-top: 30px;
+        font-size: 40px
+    }
+    .main .container{
+        flex-wrap: wrap;
+    }
+    .main h3{
+        margin-top: 30px;
+        font-size: 22px;
+    }
+    .main ul{
+        margin-bottom: 30px;
+    }
+    .main .container button{
+        padding: 20px 87px 20px 31px;
+        margin: 15px 0;
+    }
+    .main .container div {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+    .main-2{
+        padding-bottom: 80px;
+    }
+    .main-2 .container .top{
+        text-align: center;
+    }
+    .main-2 .top ul li{
+        font-size: 18px;
+    }
+    .main-2 .container .top h2{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+    .main-2 .container .top h2::after{
+        margin-left: -100px;
+        top: 85px;
+        left: 50%;
+    }
+    .main-2 .container .slider{
+        background-size: 100%;
+        width: 100%;
+        margin: -300px 50px 0;
+    }
+    .main-2 .bottom h2{
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    .main-2 .bottom span{
+        height: 180px;
+        padding: 10px 30px;
+    }
+    .main-2 .bottom ul li{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+        padding: 10px 15px;
+        font-size: 15px;
+
+    }
+    .main-2 .bottom ul li img{
+        margin: 10px auto;
+    }
+    .main-2 .bottom button:first-child{
+        padding: 10px 30px 10px 30px;
+        margin-top: 30px;
+    }
+    .main-2 .bottom button:last-child{
+        padding: 10px 15px 10px 15px;
+    }
+    .main-2 .bottom h2::after{
+        top: 55px;
+        left: 50%;
+        margin-left: -100px;
+    }
+    /*.main-3*/
+
+    .main-3 h2{
+        font-size: 40px;
+        padding-top: 50px;
+    }
+    .main-3 h2::after{
+        top: 115px;
+    }
+    .main-3 h3{
+        font-size: 16px;
+        margin: 30px auto 0;
+    }
+    .main-3 .container ul li{
+        margin: 10px 0;
+        width: 300px;
+    }
+    .main-3 ul li p{
+        margin:20px auto 0;
+        font-size: 20px;
+    }
+    .main-3 ul li button{
+        padding: 10px 20px 10px 10px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .main-3 ul li:nth-child(3){
+        margin: 20px auto;
+    }
+    .main-3 ul:first-of-type{
+        margin-bottom: 0;
+    }
+    .reviews h2{
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    .reviews h2::after{
+        top: 100px;
+    }
+    .reviews h3{
+        font-size: 20px;
+        margin: 25px auto 0;
+    }
+    .reviews ul{
+        flex-wrap: wrap;
+    }
+    .reviews ul li:first-child{
+        margin: -40px 0 0 0;
+    }
+    .reviews p{
+        margin: -60px auto 0;
+    }
+    .reviews p::before{
+        top: -5px;
+        left: -65px;
+    }
+    .reviews p::after{
+        top: 100px;
+        left: 350px;
+    }
+    .reviews ul li div:nth-child(1) button{
+        padding: 0 20px;
+    }
+    .reviews ul li div:nth-child(2) button{
+        padding: 30px 35px;
+    }
+    .reviews ul li div{
+        margin: 0 auto 20px;
+    }
+    .reviews ul li:last-child h3{
+        margin: 20px 0 0 0;
+    }
+    /*.consultation*/
+    .consultation{
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .consultation .container div:nth-child(2) ul:nth-child(3) li textarea{
+        width: 360px;
+    }
+    .consultation h2{
+        font-size: 40px;
+    }
+    .consultation h2::before{
+        transform: rotate(90deg);
+        top: -120px;
+    }
+    .consultation h3{
+        font-size: 22px;
+    }
+    .consultation .container div:nth-child(2) ul:nth-child(1) li input, .consultation .container div:nth-child(2) ul:nth-child(2) li input{
+        margin: 10px 0;
+    }
+    /*.footer*/
+    .footer{
+        height: 280px;
+    }
+    .footer ul li:nth-child(1){
+        background-size: contain;
+        width: 140px;
+        height: 40px;
+    }
+    .footer ul li:nth-child(1)::before{
+        top: 15px;
+    }
+    .footer ul li:nth-child(2){
+        margin-top: 25px;
+    }
+    .footer ul li:nth-child(3){
+        margin-top: 50px;
+    }
+    .footer ul li:nth-child(3)::before{
+        top: -28px;
+    }
 }
+@media all and (max-width:630px) {
+    .container{
+        width: 300px;
+    }
+}
+/*123*/
