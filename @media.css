@@ -11,6 +11,10 @@
     .head .container ul li{
         margin: 0 auto -30px;
     }
+    .head .container div ul li:not(:last-child){
+        margin-top: 40px;
+        padding-top: 40px;
+    }
     .main .container div{
         display: flex;
         flex-direction: column;
@@ -230,9 +234,12 @@
     .head .container div ul{
         flex-wrap: wrap;
     }
+
     .head .container div ul li:not(:last-child){
         font-size: 16px;
+        margin-top: 70px;
     }
+
     .head .container div ul li:last-child{
         margin-right: 180px;
         font-size: 16px;
@@ -331,7 +338,7 @@
         margin: 30px auto 0;
     }
     .main-3 .container ul li{
-        margin: 10px 0;
+        margin: 10px auto;
         width: 300px;
     }
     .main-3 ul li p{
@@ -434,7 +441,212 @@
 }
 @media all and (max-width:630px) {
     .container{
-        width: 300px;
+        position: relative;
+        padding: 0 15px;
+    }
+    .logo{
+        background-size: 200px;
+        margin: 0 auto;
+    }
+    .head .container div ul{
+        flex-direction: column;
+    }
+    .head .container div ul li:not(:last-child){
+        margin: 0px 10px;
+        padding: 40px 0 10px;
+    }
+
+    .head .container div ul li:last-child{
+        margin: 60px auto;
+        font-size: 20px;
+    }
+    .head .container div ul li:not(:last-child):hover::after{
+        display: none;
+    }
+    .head .container div ul li:not(:last-child):not(.closed-menu):hover{
+        background-color: inherit;
+    }
+    .main .container div:first-child h1{
+        margin-top: 0px;
+        font-size: 28px;
+    }
+    .main h3{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .main .container{
+        flex-direction: column;
+    }
+    .main .container button{
+        padding: 5px 30px 5px 30px;
+        margin: 15px auto;
+        width: 80%;
+        font-size: 15px;
+    }
+    .main .container div{
+        background-size: contain;
+        height: 320px;
+    }
+    .main-2 .container .top h2{
+        margin: 40px 0;
+    }
+    .main-2 .container .top h2::after{
+        display: none;
+    }
+    .main-2 .top ul li{
+        font-size: 12px;
+        line-height: 5px;
+    }
+    .main-2 .top button{
+        padding: 5px 30px 5px 30px;
+        font-size: 20px;
+    }
+    .main-2 .container .slider{
+        display:none;
+    }
+    .main-2 .bottom h2{
+        margin-top: 50px;
+    }
+    .main-2 .bottom ul li img{
+        height: auto;
+        width: 80px
+    }
+    .main-2 .bottom ul li{
+        padding: 40px 0;
+    }
+    .main-2 .bottom button:first-child,
+    .main-2 .bottom button:last-child{
+        font-size: 20px;
+        margin: 10px 10px;
+    }
+    .main-3 h3{
+        line-height: 30px;
+    }
+    .main-3 ul li img{
+        width: 50%;
+        height: auto;
+    }
+    .main-3 ul li p{
+        margin: 5px auto 0;
+        font-size: 15px;
+    }
+    .main-3 ul li button{
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    .reviews h2::after{
+        display: none;
+    }
+    .reviews h3{
+        line-height: 30px;
+    }
+    .reviews ul li:first-child{
+        height: 310px;
+    }
+    .reviews p{
+        text-align: center;
+    }
+    .reviews ul li div:nth-child(1) button{
+        margin: 10px auto 0;
+    }
+    .reviews ul li:first-child{
+        background-position: center;
+        background-size: contain;
+    }
+    .reviews ul li:last-child{
+        margin-top: 100px;
+    }
+    .reviews ul li:last-child h3{
+        margin: 25px 0 15px 0;
+    }
+    .reviews ul li .reviews-buttons{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .reviews ul li div:nth-child(2) button{
+        margin: 0;
+        padding: 14px 20px;
+    }
+    .reviews ul li:last-child h3{
+        max-width: 100%;
+    }
+    .consultation h3{
+        line-height: 30px;
+    }
+    .consultation .container ul li:not(.submit){
+        width: 90%;
+    }
+    .consultation .container div:nth-child(2) ul:nth-child(4) li input{
+        padding: 15px 60px 15px 20px;
+    }
+    .footer{
+        height: 250px;
+    }
+    .footer ul{
+        padding-top: 20px;
+    }
+    .footer ul li{
+        font-size: 14px;
+    }
+    .footer ul li:nth-child(3)::before{
+        display: none;
+    }
+    .container,
+    .main h3,
+    .main .group,
+    form li input,
+    .consultation .container div:nth-child(2) ul:nth-child(3) li textarea{
+        width: 100%;
+    }
+    .reviews ul li:last-child {
+        margin-left: 0;
+    }
+    .main ul li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .reviews p::after,
+    .main-3 h2::after{
+        display: none;
+    }
+    .reviews ul li div {
+        flex-direction: column;
+    }
+    .consultation h2,
+    .reviews h2,
+    .main-3 h2,
+    .main-2 .bottom h2,
+    .main-2 .container .top h2{
+        font-size: 28px;
+    }
+    .main-2 .bottom ul li {
+        flex-direction: column;
+    }
+    .head .container .menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #040221;
+        padding: 20px;
+        transition-duration: .3s;
+        z-index: 1;
+    }
+    .head .container .menu.open {
+        right: 0;
+        transition-duration: .3s;
+    }
+    .burger{
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+    }
+    .closed-menu{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 15px;
     }
 }
-/*123*/

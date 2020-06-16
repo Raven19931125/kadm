@@ -5,10 +5,8 @@
     outline: none;
 }
 body{
-    overflow-x: hidden;
     font-family: 'Comfortaa';
     color: white;
-
 }
 li{
     list-style-type: none;
@@ -16,6 +14,11 @@ li{
 a{
     text-decoration: none;
     color: white;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 .container{
     width: 1440px;
@@ -31,6 +34,19 @@ a{
     background: url("img/logo.png") no-repeat 0 65px;
     background-size: contain;
 }
+.burger{
+    background: url("img/burger.png") no-repeat;
+    width: 48px;
+    height: 48px;
+    display: none;
+}
+.closed-menu{
+    background: url("img/cross.png") no-repeat;
+    background-size: contain;
+    width: 38px;
+    height: auto;
+    display: none;
+}
 .head .container{
     display: flex;
     justify-content: space-between;
@@ -38,13 +54,13 @@ a{
 .head .container div ul{
     display: flex;
 }
-.head .container div ul li:not(:last-child){
+.head .container div ul li:not(:last-child):not(.closed-menu){
     position: relative;
     font-size: 22px;
     padding-top: 82px;
     margin-right: 45px;
 }
-.head .container div ul li:not(:last-child):hover{
+.head .container div ul li:not(:last-child):not(.closed-menu):hover{
     background: #DD019F;
     transition: 1s;
 }
