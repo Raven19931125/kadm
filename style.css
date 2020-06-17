@@ -28,11 +28,41 @@ a{
     background: #0E0C38 url("img/main.png") no-repeat;
     background-size: contain;
 }
+.head{
+    display: flex;
+    justify-content: space-between;
+}
 .logo{
     height: 150px;
     width: 180px;
     background: url("img/logo.png") no-repeat 0 65px;
     background-size: contain;
+}
+.head ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.head ul li:last-child button{
+    font-size: 24px;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 22px 36px 22px 36px;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+.head ul li:not(:last-child){
+    margin: 28px;
+    cursor: pointer;
+}
+.head ul li:not(:last-child):hover{
+    background: #DD019F;
+    transition: 1s;
+}
+.head button{
+    border: 2px solid white;
+    padding: 25px 35px;
 }
 .burger{
     background: url("img/burger.png") no-repeat;
@@ -44,75 +74,26 @@ a{
     background: url("img/cross.png") no-repeat;
     background-size: contain;
     width: 38px;
-    height: auto;
+    height: 38px;
     display: none;
 }
-.head .container{
+.main{
     display: flex;
     justify-content: space-between;
 }
-.head .container div ul{
-    display: flex;
+.headers{
+    width: 680px;
+    margin-top: 215px;
+    font-size: 25px;
 }
-.head .container div ul li:not(:last-child):not(.closed-menu){
-    position: relative;
-    font-size: 22px;
-    padding-top: 82px;
-    margin-right: 45px;
+.headers h3{
+    margin-top: 88px;
 }
-.head .container div ul li:not(:last-child):not(.closed-menu):hover{
-    background: #DD019F;
-    transition: 1s;
-}
-.head .container div ul li:not(:last-child):hover::after{
-    content: '';
-    position: absolute;
-    bottom: -7px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #DD019F;
-}
-.head .container div ul li:last-child{
-    font-size: 24px;
-    border: 2px solid white;
-    border-radius: 50px;
-    padding: 22px 36px 22px 36px;
-    color: white;
-    margin-top: 55px;
-}
-.main ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.main ul li{
-    border-bottom: 2px solid #222043;
-    margin-bottom: 15px;
-    width: 30px;
-    text-align: center;
-    padding-bottom: 5px;
-}
-.main .container{
-    display: flex;
-    justify-content: space-between;
-}
-.main .container div:nth-child(2){
-    display: flex;
-}
-.main .container div:first-child h1{
-    font-size: 80px;
-}
-.main h3{
-    margin-top: 65px;
-    font-size: 36px;
-    width: 620px;
-}
-.main button{
-   margin-top: 100px;
+.main-buttons{
+    margin-top: 100px;
     margin-bottom:190px;
 }
-.main button:first-of-type{
+.main-buttons button:first-child{
     padding: 34px 87px 34px 31px;
     border-radius: 66px;
     font-size: 24px;
@@ -120,7 +101,7 @@ a{
     color: white;
     border: none;
 }
-.main button:last-of-type{
+.main-buttons button:last-child{
     margin-left: 28px;
     border: 2px solid white;
     border-radius: 50px;
@@ -129,20 +110,28 @@ a{
     color: white;
     font-size: 24px;
 }
-.group{
-    background: url(img/group.png) no-repeat;
-    background-size: contain;
-    height: 650px;
-    width: 650px;
+.main-carousel{
+    width: 550px;
+    height: auto;
+    margin: 150px auto 0;
 }
-.main .container div:nth-child(3) ul{
-    position: absolute;
-    top: 680px;
-    right: 75px
+.main-carousel img{
+    width: 100%;
+    height: auto;
 }
-.main .container div:nth-child(3) ul li{
-    margin-bottom: 25px;
+.home-slider.owl-carousel{
+    display: flex;
+    flex-direction: column;
+ }
+.owl-dots{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
 }
+.owl-dot{
+    margin: 40px 0;
+}
+
 /*main-2*/
 .main-2{
     background:#040221 url("img/main-2.png") no-repeat;
@@ -288,107 +277,74 @@ a{
     border: none;
     margin-top:45px;
 }
-
-
-/*.reviews*/
-
 .reviews{
-    background-color: #040221;
+    background:#040221;
 }
 .reviews h2{
-    font-size: 60px;
+    padding-top: 80px;
     text-align: center;
-    padding-top: 135px;
-    position: relative;
-}
-.reviews h2::after{
-    content: '';
-    position: absolute;
-    top: 260px;
-    left: 50%;
-    width: 280px;
-    height: 2px;
-    margin-left: -140px;
-    background-color: #DD019F;
+    font-size: 60px;
 }
 .reviews h3{
     font-size: 38px;
-    max-width: 635px;
-    text-align: center;
-    margin: 110px auto 0;
-    line-height: 50px;
-}
-.reviews p{
-    position: relative;
-}
-.reviews p::before{
-    content: '';
-    position: absolute;
-    background: url("img/pause.png");
-    top: -85px;
-    left: 25px;
-    width: 42px;
-    height: 50px;
-}
-.reviews p::after{
-    content: '';
-    position: absolute;
-    background: url("img/pause.png");
-    top: 150px;
-    left: 325px;
-    width: 42px;
-    height: 50px;
-}
-.reviews ul{
-    display: flex;
-    justify-content: space-between;
-    margin-top:50px;
-}
-.reviews ul li:first-child{
-    background: url(img/map.png) no-repeat 10px 160px;
-    width: 810px;
-    height: 680px;
-    background-size:100%;
-
-}
-.reviews ul li:last-child{
-    max-width: 880px;
-    margin: 150px 0 0 80px;
-    font-size: 25px;
-}
-.reviews ul li:last-child h3{
-    font-size: 30px;
-    margin: 180px 0 0 0;
-    max-width: 310px;
+    margin-top: 40px;
     text-align: center;
 }
-.reviews ul li div{
+.reviews-content{
     display: flex;
     justify-content: space-between;
-    margin:50px 0;
 }
-.reviews ul li div:nth-child(1) button{
-    padding: 38px 132px 35px 80px;
-    border-radius: 66px;
+.map{
+    width: 50%;
+    margin: 100px 0;
+}
+.map img{
+    width: 610px;
+    height: auto;
+}
+.reviews-slider {
+    overflow: hidden;
+}
+.review-slide {
+    font-size: 24px;
+    width: 530px;
+    margin: 100px 0px 50px 100px;
+}
+.owl-nav > button {
+    width: 100px;
+    height: 100px;
+}
+.owl-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.owl-nav > button > span {
+    padding: 40px 45px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+.owl-prev {
+    margin-right: 30px;
+}
+.reviews-content h2{
+    font-size:28px;
+}
+.reviews-right-block{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.reviews-right-block .btn{
+    padding: 30px 80px 30px 80px;
+    border-radius: 50px;
     font-size: 24px;
     background-color: #DD019F;
     color: white;
     border: none;
+    width: 390px;
+    margin-top: -90px
 }
-.reviews ul li div:nth-child(2) button{
-    padding: 40px 45px;
-    border-radius: 50%;
-    font-size: 24px;
-    color: white;
-    border: 2px solid white;
-    background-color: transparent;
-    margin-left: 30px;
-}
-
-
 /*.consultation*/
-
-
 .consultation{
     padding-top: 263px;
     background-color: #0E0C38;
@@ -500,7 +456,6 @@ a{
     width: 80%;
     height: 2px;
     background-color: #DD019F;
-
 }
 
 

@@ -2,52 +2,23 @@
     .container{
         width: 1000px;
     }
-    .logo{
-        margin-left: 20px;
+    .headers{
+        max-width: 480px;
+        margin-top: 180px;
+        font-size: 18px;
     }
-    .head .container{
-        flex-direction: column;
+    .main-buttons{
+        display: flex;
+        flex-wrap: wrap;
     }
-    .head .container ul li{
-        margin: 0 auto -30px;
+    .main-buttons button:first-child{
+        padding: 25px 70px 25px 30px;
     }
-    .head .container div ul li:not(:last-child){
+    .main-buttons button:last-child{
+        padding: 25px 70px 25px 30px;
+        margin-left: 0;
         margin-top: 40px;
-        padding-top: 40px;
     }
-    .main .container div{
-        display: flex;
-        flex-direction: column;
-        margin: 30px 0 50px 0;
-    }
-    .head .container div ul{
-        margin: -50px auto 30px;
-    }
-    .main .container div:first-child h1{
-        font-size: 60px;
-    }
-    .main .group{
-        background-size: 450px;
-        width: 463px;
-        height: 460px;
-    }
-    .main h3{
-        font-size: 26px;
-        width: 450px;
-    }
-    .main ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .main ul li{
-        margin:0 30px 0;
-    }
-    .main .container button{
-        margin: 20px 0;
-        padding-right: 30px;
-    }
-    /*.main*/
     .main-2{
         padding-bottom: 60px;
     }
@@ -128,56 +99,23 @@
         font-size: 20px;
         margin-bottom: 20px;
     }
-    /*.reviews*/
-    .reviews h2{
-        font-size: 50px;
-        padding-top: 55px;
+    .map img{
+        width: 500px;
     }
-    .reviews h3{
-        font-size: 22px;
-        margin: 40px auto 0;
+    .review-slide{
+        width: 400px;
     }
-    .reviews h2::after{
-        top: 130px;
-    }
-    .reviews ul li div{
-        display: flex;
-        justify-content: space-between;
-        margin: 0px 0px 0px;
-        width: 100%;
-    }
-    .reviews ul li:first-child{
-        background: url(img/map.png) no-repeat 10px 0;
-        width: 810px;
-        height: 540px;
-        background-size: 100%;
-    }
-    .reviews ul li:last-child{
-        margin: 20px 0 0 60px;
-    }
-    .reviews ul li:last-child h3{
-        margin: 50px 0 0 0;
-        font-size: 22px;
-    }
-    .reviews ul li div:nth-child(1) button{
-        padding: 0 25px;
-    }
-    .reviews ul li div:nth-child(2) button{
-        padding: 30px 35px;
-    }
-    .reviews p{
+    .reviews-content h2{
         font-size: 20px;
     }
-    .reviews p::before{
-        top: -60px;
-        left: 20px;
+    .reviews-right-block .btn{
+        margin-top: 0;
+        margin-bottom: 50px;
     }
-    .reviews p::after{
-        top: 120px;
-        left: 120px;
-    }
-    .reviews ul li div button{
-        margin-top: 50px;
+    .owl-nav{
+        margin-left: -130px;
+        margin-bottom: 40px;
+        justify-content: space-evenly;
     }
     /*.consultation*/
     .consultation h2{
@@ -226,47 +164,31 @@
     .container{
         width: 600px;
     }
-    .logo{
-        background-size: 300px;
-        width: 300px;
-        margin: 0 auto;
-    }
-    .head .container div ul{
+    .head ul{
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main-buttons{
+        margin: 30px auto;
     }
 
-    .head .container div ul li:not(:last-child){
-        font-size: 16px;
-        margin-top: 70px;
+    .main-buttons button:first-child{
+        padding: 10px 40px 10px 30px;
+        font-size: 15px;
     }
+    .main-buttons button:last-child{
+        padding: 10px 40px 10px 30px;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .main-carousel{
+        width: 340px;
+        margin: 80px 0 0 30px;
 
-    .head .container div ul li:last-child{
-        margin-right: 180px;
+    }
+    .headers{
+        margin-top: 80px;
         font-size: 16px;
-    }
-    .main .container div:first-child h1{
-        margin-top: 30px;
-        font-size: 40px
-    }
-    .main .container{
-        flex-wrap: wrap;
-    }
-    .main h3{
-        margin-top: 30px;
-        font-size: 22px;
-    }
-    .main ul{
-        margin-bottom: 30px;
-    }
-    .main .container button{
-        padding: 20px 87px 20px 31px;
-        margin: 15px 0;
-    }
-    .main .container div {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto 10px;
-        text-align: center;
     }
     .main-2{
         padding-bottom: 80px;
@@ -356,45 +278,8 @@
     .main-3 ul:first-of-type{
         margin-bottom: 0;
     }
-    .reviews h2{
-        font-size: 40px;
-        padding-top: 40px;
-    }
-    .reviews h2::after{
-        top: 100px;
-    }
-    .reviews h3{
-        font-size: 20px;
-        margin: 25px auto 0;
-    }
-    .reviews ul{
-        flex-wrap: wrap;
-    }
-    .reviews ul li:first-child{
-        margin: -40px 0 0 0;
-    }
-    .reviews p{
-        margin: -60px auto 0;
-    }
-    .reviews p::before{
-        top: -5px;
-        left: -65px;
-    }
-    .reviews p::after{
-        top: 100px;
-        left: 350px;
-    }
-    .reviews ul li div:nth-child(1) button{
-        padding: 0 20px;
-    }
-    .reviews ul li div:nth-child(2) button{
-        padding: 30px 35px;
-    }
-    .reviews ul li div{
-        margin: 0 auto 20px;
-    }
-    .reviews ul li:last-child h3{
-        margin: 20px 0 0 0;
+    .map img{
+
     }
     /*.consultation*/
     .consultation{
@@ -443,50 +328,36 @@
     .container{
         position: relative;
         padding: 0 15px;
+        width: 320px;
     }
-    .logo{
-        background-size: 200px;
-        margin: 0 auto;
+    .head ul{
+        margin: 150px auto;
     }
-    .head .container div ul{
-        flex-direction: column;
+    .head ul li:last-child button{
+        margin-top: 70px;
+        padding: 22px 25px 22px 25px;
     }
-    .head .container div ul li:not(:last-child){
-        margin: 0px 10px;
-        padding: 40px 0 10px;
+    .main{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .headers h1{
+        margin-top:-80px ;
+    }
+    .headers h3{
+        margin-top: 30px;
+    }
+    .main-carousel{
+        width: 250px;
+        margin: 10px 20px;
+    }
+    .main-carousel img{
+        width: 70%;
+    }
+    .main-buttons{
+        margin: 10px 30px 10px 55px;
     }
 
-    .head .container div ul li:last-child{
-        margin: 60px auto;
-        font-size: 20px;
-    }
-    .head .container div ul li:not(:last-child):hover::after{
-        display: none;
-    }
-    .head .container div ul li:not(:last-child):not(.closed-menu):hover{
-        background-color: inherit;
-    }
-    .main .container div:first-child h1{
-        margin-top: 0px;
-        font-size: 28px;
-    }
-    .main h3{
-        margin-top: 20px;
-        font-size: 16px;
-    }
-    .main .container{
-        flex-direction: column;
-    }
-    .main .container button{
-        padding: 5px 30px 5px 30px;
-        margin: 15px auto;
-        width: 80%;
-        font-size: 15px;
-    }
-    .main .container div{
-        background-size: contain;
-        height: 320px;
-    }
     .main-2 .container .top h2{
         margin: 40px 0;
     }
@@ -534,42 +405,6 @@
         font-size: 15px;
         margin: 10px 0;
     }
-    .reviews h2::after{
-        display: none;
-    }
-    .reviews h3{
-        line-height: 30px;
-    }
-    .reviews ul li:first-child{
-        height: 310px;
-    }
-    .reviews p{
-        text-align: center;
-    }
-    .reviews ul li div:nth-child(1) button{
-        margin: 10px auto 0;
-    }
-    .reviews ul li:first-child{
-        background-position: center;
-        background-size: contain;
-    }
-    .reviews ul li:last-child{
-        margin-top: 100px;
-    }
-    .reviews ul li:last-child h3{
-        margin: 25px 0 15px 0;
-    }
-    .reviews ul li .reviews-buttons{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .reviews ul li div:nth-child(2) button{
-        margin: 0;
-        padding: 14px 20px;
-    }
-    .reviews ul li:last-child h3{
-        max-width: 100%;
-    }
     .consultation h3{
         line-height: 30px;
     }
@@ -591,7 +426,6 @@
     .footer ul li:nth-child(3)::before{
         display: none;
     }
-    .container,
     .main h3,
     .main .group,
     form li input,
@@ -606,11 +440,9 @@
         margin-right: 15px;
     }
     .reviews p::after,
-    .main-3 h2::after{
+    .main-3 h2::after,
+    .reviews p::before{
         display: none;
-    }
-    .reviews ul li div {
-        flex-direction: column;
     }
     .consultation h2,
     .reviews h2,
@@ -622,7 +454,7 @@
     .main-2 .bottom ul li {
         flex-direction: column;
     }
-    .head .container .menu{
+     .menu{
         position: fixed;
         top: 0;
         right: -100%;
@@ -631,23 +463,24 @@
         background-color: #040221;
         padding: 20px;
         transition-duration: .3s;
-        z-index: 1;
+        z-index: 10;
     }
-    .head .container .menu.open {
+    .menu.open {
         right: 0;
         transition-duration: .3s;
     }
     .burger{
         display: block;
         position: absolute;
-        top: 70px;
-        right: 20px;
+        top: 55px;
+        right: 25px;
     }
     .closed-menu{
+        background: url("img/cross.png");
+        background-size: contain;
         display: block;
         position: absolute;
         top: 40px;
         right: 15px;
     }
 }
-/*qwerty*/

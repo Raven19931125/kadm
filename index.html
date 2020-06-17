@@ -5,53 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="@media.css">
+    <link rel="stylesheet" href="media.css">
 
 </head>
 <body>
 <div class="wrapper">
     <div class="back">
-        <div class="head">
-            <div class="container">
-                <div class="logo"></div>
-                <div class="burger"></div>
+        <div class="container">
+            <div class="head">
+                <div class="logo">
 
+                </div>
                 <div class="menu">
                     <ul>
                         <li class="closed-menu"></li>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Акции</a></li>
-                        <li><a href="#">Сервис</a></li>
-                        <li><a href="#">Товары</a></li>
-                        <li>+375(29-123-456-789)</li>
-
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">акции</a></li>
+                        <li><a href="">Сервис</a></li>
+                        <li><a href="">Товары</a></li>
+                        <li>
+                            <a href="tel:+375(29) 123-45-67">
+                                <button>+375(29) 123-45-67</button>
+                            </a>
+                        </li>
                     </ul>
                 </div>
+                <div class="burger">
+                </div>
             </div>
-        </div>
-        <div class="main">
-            <div class="container">
-                <div>
-                    <h1>Заправка<br> картриджей<br> в Минске</h1>
-                    <h3>Рмонт и прошивка принтеров<br> бусплатный вызд</h3>
+            <div class="main">
+                <div class="headers">
+                    <h1>Заправка
+                        картриджей
+                        в Минске </h1>
+                    <h3>
+                        Ремонт и прошивка принтеров
+                        Бесплатный выезд
+                    </h3>
                     <div class="main-buttons">
                         <button>Оформить заказ</button>
-                        <button> получить консультацию</button>
+                        <button>Оформить заказ</button>
                     </div>
                 </div>
                 <div>
-                    <div class="group">
+                    <div class="main-carousel">
+                        <div class="home-slider owl-carousel">
+                            <div class="item">
+                                <img src="img/group.png">
+                            </div>
+                            <div class="item">
+                                <img src="img/group.png">
+                            </div>
+                            <div class="item">
+                                <img src="img/group.png">
+                            </div>
+                        </div>
                     </div>
-                    <ul>
-                        <li>01</li>
-                        <li>02</li>
-                        <li>03</li>
-                        <li>04</li>
-                    </ul>
                 </div>
             </div>
-
         </div>
     </div>
     <div class="main-2">
@@ -141,39 +154,55 @@
                     <button>ПРИОБРЕСТИ ТОВАР</button>
                 </li>
             </ul>
-
-
         </div>
     </div>
     <div class="reviews">
         <div class="container">
             <h2>Отзывы наших клиентов</h2>
-            <h3>Вы так же можете написать свой отзыв
-                и мы с радостью его опубликуем</h3>
-            <ul>
-                <li>
-
-                </li>
-                <li>
-                    <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                        quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta sunt is the most explicabo.
-                    </p>
-                    <h3>- Sara Smith<br> CEO ABC Company</h3>
-                    <div>
-                        <div>
-                            <button>Написать отзыв</button>
+            <h3>Вы так же можете написать свой отзыв</h3>
+            <div class="reviews-content">
+                <div class="map">
+                    <img src="img/map.png">
+                </div>
+                <div class="reviews-right-block">
+                    <div class="reviews-slider owl-carousel">
+                        <div class="review-slide">
+                            Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium,
+                            totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae
+                            dicta sunt is the most explicabo.
+                            <h2>
+                                - Sara Smith
+                                CEO ABC Company
+                            </h2>
                         </div>
-                        <div class="reviews-buttons">
-                            <button> <</button>
-                            <button> ></button>
+                        <div class="review-slide">
+                            Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium,
+                            totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae
+                            dicta sunt is the most explicabo.
+                            <h2>
+                                - Sara Smith
+                                CEO ABC Company
+                            </h2>
+                        </div>
+                        <div class="review-slide">
+                            Sed ut perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium,
+                            totam rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae
+                            dicta sunt is the most explicabo.
+                            <h2>
+                                - Sara Smith
+                                CEO ABC Company
+                            </h2>
                         </div>
                     </div>
-                </li>
-            </ul>
-
+                    <button class="btn">НАПИСАТЬ ОТЗЫВ</button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="consultation">
@@ -220,6 +249,7 @@
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="scripts.js"></script>
 </body>
 </html>
