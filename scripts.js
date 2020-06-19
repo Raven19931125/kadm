@@ -24,4 +24,10 @@ $(document).ready(function () {
     $('.owl-dot').each(function(){
         $(this).children('span').text($(this).index()+1);
     });
+    $('.show-form').on('click',function () {
+        $('.shadow').css("display","block")
+    });
+    $('.closed').on('click',function () {
+        $('.shadow').css("display","none")
+    });
 });

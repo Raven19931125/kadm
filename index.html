@@ -11,20 +11,44 @@
 
 </head>
 <body>
+<div class="shadow">
+    <div class="popup">
+        <div class="logo">
+        </div>
+        <button class="closed">
+            X
+        </button>
+
+        <h2>Хотите сделать заказ?</h2>
+        <h3>Заполните форму ниже и наши специалисты свяжуться с вами</h3>
+        <form action="">
+            <div class="data">
+                <input type="name" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш телефон">
+            </div>
+            <p><input type="checkbox"> Я принимаю условия пользовательского соглашения
+                и даю право на обработку моих</p>
+            <div class="trigger">
+                <input type="submit" value="TRIGGER">
+            </div>
+
+
+        </form>
+    </div>
+</div>
 <div class="wrapper">
     <div class="back">
         <div class="container">
             <div class="head">
                 <div class="logo">
-
                 </div>
                 <div class="menu">
                     <ul>
                         <li class="closed-menu"></li>
-                        <li><a href="">Главная</a></li>
-                        <li><a href="">акции</a></li>
-                        <li><a href="">Сервис</a></li>
-                        <li><a href="">Товары</a></li>
+                        <li><a href="#main">Главная</a></li>
+                        <li><a href="#stocks">акции</a></li>
+                        <li><a href="#service">Сервис</a></li>
+                        <li><a href="#products">Товары</a></li>
                         <li>
                             <a href="tel:+375(29) 123-45-67">
                                 <button>+375(29) 123-45-67</button>
@@ -35,7 +59,7 @@
                 <div class="burger">
                 </div>
             </div>
-            <div class="main">
+            <div id="main" class="main">
                 <div class="headers">
                     <h1>Заправка
                         картриджей
@@ -45,8 +69,8 @@
                         Бесплатный выезд
                     </h3>
                     <div class="main-buttons">
-                        <button>Оформить заказ</button>
-                        <button>Оформить заказ</button>
+                        <button class="show-form">Оформить заказ</button>
+                        <button class="show-form">Оформить заказ</button>
                     </div>
                 </div>
                 <div>
@@ -71,7 +95,7 @@
         <div class="container">
             <div class="top">
                 <div>
-                    <h2>Почему мы?</h2>
+                    <h2 id="stocks">Почему мы?</h2>
                     <ul>
                         <li>-Бесплатный выезд от 40 минут до 4 часов</li>
                         <li>-Самые выгодные цены от 7 рублей</li>
@@ -79,36 +103,36 @@
                         <li>-Скидка 50% на расходные матриалы</li>
                         <li>-Наличный и безналичный расчёт</li>
                     </ul>
-                    <button>Оформить заказ</button>
+                    <button class="show-form">Оформить заказ</button>
                 </div>
                 <div class="slider">
                 </div>
             </div>
             <div class="bottom">
-                <h2>Сервис</h2>
+                <h2 id="service">Сервис</h2>
                 <ul>
                     <li>
                     <span>Заправить<br> струйный картридж<br> от 7.00 Byn<br>
                     <img src="img/printer.png" height="250" width="254"/></span>
                         <div>
-                            <button>Заказать услугу</button>
-                            <button>Узнать подробнее</button>
+                            <button class="show-form">Заказать услугу</button>
+                            <button class="show-form">Узнать подробнее</button>
                         </div>
                     </li>
                     <li>
                     <span>ЗАПРАВИТЬ<br>ЛАЗЕРНЫЙ КАРТРИДЖ<br>от 12.00 BYN<br>
                     <img src="img/cartrige.png" height="269" width="334"/></span>
                         <div>
-                            <button>Заказать услугу</button>
-                            <button>Узнать подробнее</button>
+                            <button class="show-form">Заказать услугу</button>
+                            <button class="show-form">Узнать подробнее</button>
                         </div>
                     </li>
                     <li>
                     <span>РЕМОНТ<br>ВАШЕГО ПРИНТЕРА<br>от 12.00 BYN<br>
                     <img src="img/printer-2.png" height="264" width="284"/></span>
                         <div>
-                            <button>Заказать услугу</button>
-                            <button>Узнать подробнее</button>
+                            <button class="show-form">Заказать услугу</button>
+                            <button class="show-form">Узнать подробнее</button>
                         </div>
                     </li>
                 </ul>
@@ -118,40 +142,40 @@
     </div>
     <div class="main-3">
         <div class="container">
-            <h2>Дополнительные товары</h2>
+            <h2 id="products">Дополнительные товары</h2>
             <h3>Вместе с услугой мы доставляем БЕСПЛАТНО следующие товары</h3>
             <ul>
                 <li>
                     <img src="img/paper.png" height="161" width="223"/>
                     <p>БУМАГА<br> от 8.00 BYN </p>
-                    <button>ПРИОБРЕСТИ ТОВАР</button>
+                    <button class="show-form">ПРИОБРЕСТИ ТОВАР</button>
                 </li>
                 <li>
                     <img src="img/block.png" height="133" width="236"/>
                     <p>Новые картриджи<br> от 14.00 BYN</p>
-                    <button>ПРИОБРЕСТИ ТОВАР</button>
+                    <button class="show-form">ПРИОБРЕСТИ ТОВАР</button>
                 </li>
                 <li>
                     <img src="img/color.png" height="159" width="141"/>
                     <p>ЧЕРНИЛА<br> от 8.00 BYN</p>
-                    <button>ПРИОБРЕСТИ ТОВАР</button>
+                    <button class="show-form">ПРИОБРЕСТИ ТОВАР</button>
                 </li>
             </ul>
             <ul>
                 <li>
                     <img src="img/printer-2.png" height="264" width="284"/>
                     <p>ПРИНТЕРА Стоимость уточняйте</p>
-                    <button>ПРИОБРЕСТИ ТОВАР</button>
+                    <button class="show-form">ПРИОБРЕСТИ ТОВАР</button>
                 </li>
                 <li>
                     <img src="img/xerox.png" height="241" width="163"/>
                     <p>МФУ Стоимость уточняйте </p>
-                    <button>ПРИОБРЕСТИ ТОВАР</button>
+                    <button class="show-form">ПРИОБРЕСТИ ТОВАР</button>
                 </li>
                 <li>
                     <img src="img/paper-for.png" height="187" width="294"/>
                     <p>БУМАГА ДЛЯ ФАКСА от 2.00 BYN</p>
-                    <button>ПРИОБРЕСТИ ТОВАР</button>
+                    <button class="show-form">ПРИОБРЕСТИ ТОВАР</button>
                 </li>
             </ul>
         </div>
@@ -200,7 +224,7 @@
                             </h2>
                         </div>
                     </div>
-                    <button class="btn">НАПИСАТЬ ОТЗЫВ</button>
+                    <button class="btn show-form">НАПИСАТЬ ОТЗЫВ</button>
                 </div>
             </div>
         </div>
